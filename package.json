@@ -1,0 +1,20 @@
+{
+  "name": "debuggable-firebase",
+  "version": "1.0.0",
+  "description": "Automatically select either the live or debugger version of the Firebase apps",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": "https://github.com/palkerecsenyi/debuggable-firebase",
+  "author": "Pal Kerecsenyi",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "dependencies": {
+    "firebase": "10.x"
+  },
+  "devDependencies": {
+    "typescript": "^5.x"
+  }
+}

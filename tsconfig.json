@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "target": "es6",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"]
+}
