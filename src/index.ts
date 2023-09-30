@@ -57,22 +57,25 @@ export default class DebuggableFirebase {
 
     getConfiguredFirestore() {
         if (this.firestore) return this.firestore
-        this.firestore = this.getters.firestore()
-        if (this.useDebugger) connectFirestoreEmulator(this.firestore, this.options.firestore.host, this.options.firestore.port)
-        return this.firestore
+        const firestore = this.getters.firestore()
+        if (this.useDebugger) connectFirestoreEmulator(firestore, this.options.firestore.host, this.options.firestore.port)
+        this.firestore = firestore
+        return firestore
     }
 
     getConfiguredAuth() {
         if (this.auth) return this.auth
-        this.auth = this.getters.auth()
-        if (this.useDebugger) connectAuthEmulator(this.auth, this.options.auth.url)
-        return this.auth
+        const auth = this.getters.auth()
+        if (this.useDebugger) connectAuthEmulator(auth, this.options.auth.url)
+        this.auth = auth
+        return auth
     }
 
     getConfiguredFunctions() {
         if (this.functions) return this.functions
-        this.functions = this.getters.functions()
-        if (this.useDebugger) connectFunctionsEmulator(this.functions, this.options.functions.host, this.options.functions.port)
-        return this.functions
+        const functions = this.getters.functions()
+        if (this.useDebugger) connectFunctionsEmulator(functions, this.options.functions.host, this.options.functions.port)
+        this.functions = functions
+        return functions
     }
 }
