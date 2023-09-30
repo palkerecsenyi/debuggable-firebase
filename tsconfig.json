@@ -9,7 +9,8 @@
     "esModuleInterop": true,
     "outDir": "dist",
     "target": "es6",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
   },
   "include": ["src/**/*"]
 }

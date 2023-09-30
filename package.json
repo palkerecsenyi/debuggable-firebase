@@ -1,6 +1,6 @@
 {
   "name": "debuggable-firebase",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Automatically select either the live or debugger version of the Firebase apps",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -16,5 +16,6 @@
   },
   "devDependencies": {
     "typescript": "^5.x"
-  }
+  },
+  "packageManager": "yarn@3.6.3"
 }
